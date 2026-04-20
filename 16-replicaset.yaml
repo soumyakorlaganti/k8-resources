@@ -9,7 +9,7 @@ metadata:
     tier: frontend
     component: frontend
 spec:
-  replicas: 10
+  replicas: 1
   selector:
     # using these labels replica set selects the pod
     matchLabels:
@@ -28,4 +28,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:stable-alpine3.23-per1
